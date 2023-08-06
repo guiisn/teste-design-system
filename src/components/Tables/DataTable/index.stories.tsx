@@ -1,0 +1,69 @@
+import { Meta, StoryObj } from '@storybook/react';
+import React from 'react';
+import DataTable, { DataTableProps } from '.';
+
+export default {
+  title: 'Tables/DataTable',
+  component: DataTable,
+  tags: ['autodocs'],
+  decorators: [
+    (Story) => <div style={{ height: '20rem' }}>{Story()}</div>,
+  ],
+  argTypes: {
+    isLoading: {
+      options: [true, false],
+      control: { type: 'inline-radio' },
+    },
+  },
+} as Meta<DataTableProps>;
+
+const rows = [
+  {
+    position: 6, mass: 12.011, symbol: 'C', name: 'Carbon',
+  },
+  {
+    position: 7, mass: 14.007, symbol: 'N', name: 'Nitrogen',
+  },
+  {
+    position: 39, mass: 88.906, symbol: 'Y', name: 'Yttrium',
+  },
+  {
+    position: 56, mass: 137.33, symbol: 'Ba', name: 'Barium',
+  },
+  {
+    position: 58, mass: 140.12, symbol: 'Ce', name: 'Cerium',
+  },
+];
+
+export const Table: StoryObj<DataTableProps> = {
+  args: {
+    columns: ['Element position', 'Element name', 'Symbol', 'Atomic mass'],
+    rows,
+  },
+};
+
+export const TableWithoutData: StoryObj<DataTableProps> = {
+  args: {
+    columns: ['Element position', 'Element name', 'Symbol', 'Atomic mass'],
+    rows: [],
+  },
+};
+
+export const TableLoading: StoryObj<DataTableProps> = {
+  args: {
+    columns: ['Element position', 'Element name', 'Symbol', 'Atomic mass'],
+    rows: [],
+    isLoading: true,
+  },
+};
+
+export const TableWithPagination: StoryObj<DataTableProps> = {
+  args: {
+    columns: ['Element position', 'Element name', 'Symbol', 'Atomic mass'],
+    rows,
+    paginationProps: {
+      totalPages: 2,
+      onPageChange: () => console.log('page changed'),
+    },
+  },
+};

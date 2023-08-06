@@ -1,0 +1,54 @@
+import { MantineThemeOverride } from '@mantine/core';
+import {
+  laraAquamarine, laraBlue, laraGreen, laraGrey, laraOrange, laraPink, laraPurple, laraRed, laraSuccess, laraYellow,
+} from './colors';
+
+const GlobalTheme: MantineThemeOverride = {
+  colors: {
+    laraPurple,
+    laraGrey,
+    laraAquamarine,
+    laraBlue,
+    laraGreen,
+    laraOrange,
+    laraPink,
+    laraRed,
+    laraSuccess,
+    laraYellow,
+  },
+  primaryColor: 'laraPurple',
+  colorScheme: 'light',
+  components: {
+    Button: {
+      defaultProps: {
+        color: 'laraPurple.4',
+      },
+      styles: {
+        root: {
+          borderRadius: '30px',
+          minWidth: '7.5rem',
+          '&[data-loading]': {
+            '.mantine-Button-label': {
+              display: 'none',
+            },
+          },
+        },
+      },
+    },
+    Title: {
+      styles: {
+        root: {
+          '&:is(h1)': {
+            fontFamily: 'Nunito',
+            fontSize: '2.5rem',
+          },
+        },
+      },
+    },
+  },
+  loader: 'dots',
+  fontFamily: 'Nunito',
+  headings: { fontFamily: 'Nunito' },
+};
+
+export default GlobalTheme;
