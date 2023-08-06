@@ -2,7 +2,7 @@ import { MantineProvider } from '@mantine/core';
 import CustomTheme from '../src/styles/theme';
 import React from 'react';
 
-function ThemeWrapper(props: { children: React.ReactNode }) {
+export function ThemeWrapper(props: { children: React.ReactNode }) {
   return (
     <MantineProvider theme={CustomTheme} withGlobalStyles withNormalizeCSS>
       {props.children}
