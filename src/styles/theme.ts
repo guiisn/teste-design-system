@@ -30,6 +30,7 @@ const GlobalTheme: MantineThemeOverride = {
           '&[data-loading]': {
             '.mantine-Button-label': {
               display: 'none',
+              fontFamily: 'Nunito',
             },
           },
         },
