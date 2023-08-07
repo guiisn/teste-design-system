@@ -14,7 +14,7 @@ export default function NoResults(): JSX.Element {
       <Box className={classes.component} data-testid="noResultsContainer">
         <Stack align="center">
           <MoodSad className={classes.icon} />
-          <Title color="laraPurple.4" order={2} weight={800}>
+          <Title order={2} weight={800}>
             Nenhum resultado encontrado!
           </Title>
         </Stack>

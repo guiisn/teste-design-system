@@ -4,6 +4,6 @@ type ExtendedCustomColors = 'laraPurple' | 'laraGrey' | 'laraAquamarine' | 'lara
 
 declare module '@mantine/core' {
   export interface MantineThemeColorsOverride {
-    colors: Record<Tuple<string, 10>>;
+    colors: Record<ExtendedCustomColors, Tuple<string, 10>>;
   }
 }

@@ -38,6 +38,9 @@ const GlobalTheme: MantineThemeOverride = {
       },
     },
     Title: {
+      defaultProps: {
+        color: 'laraPurple.4',
+      },
       styles: {
         root: {
           '&:is(h1)': {
@@ -45,6 +48,11 @@ const GlobalTheme: MantineThemeOverride = {
             fontSize: '2.5rem',
           },
         },
+      },
+    },
+    Loader: {
+      defaultProps: {
+        color: 'laraPurple.4',
       },
     },
   },
