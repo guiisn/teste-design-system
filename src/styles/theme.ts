@@ -17,12 +17,12 @@ const GlobalTheme: MantineThemeOverride = {
     teal: laraSuccess,
     yellow: laraYellow,
   },
-  primaryColor: 'laraPurple',
+  primaryColor: 'violet',
   colorScheme: 'light',
   components: {
     Button: {
       defaultProps: {
-        color: 'laraPurple.4',
+        color: 'violet.4',
       },
       styles: {
         root: {
@@ -39,7 +39,7 @@ const GlobalTheme: MantineThemeOverride = {
     },
     Title: {
       defaultProps: {
-        color: 'laraPurple.4',
+        color: 'violet.4',
       },
       styles: {
         root: {
@@ -52,7 +52,7 @@ const GlobalTheme: MantineThemeOverride = {
     },
     Loader: {
       defaultProps: {
-        color: 'laraPurple.4',
+        color: 'violet.4',
       },
     },
   },
