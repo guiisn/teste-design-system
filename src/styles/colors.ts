@@ -1,3 +1,5 @@
+import { Tuple } from '@mantine/core';
+
 export const laraPurple = [
   '#f2e3ff',
   '#d3b2ff',
@@ -9,7 +11,7 @@ export const laraPurple = [
   '#340082',
   '#1f0050',
   '#0b0020',
-] as any;
+] as Tuple<string, 10>;
 export const laraGrey = [
   '#E4E4E4',
   '#D9D9D9',
@@ -21,7 +23,7 @@ export const laraGrey = [
   '#404040',
   '#262626',
   '#120B0D',
-] as any;
+] as Tuple<string, 10>;
 export const laraAquamarine = [
   '#DFFCF8',
   '#BEEEE8',
@@ -33,7 +35,7 @@ export const laraAquamarine = [
   '#186158',
   '#063B35',
   '#001614',
-] as any;
+] as Tuple<string, 10>;
 export const laraGreen = [
   '#DCFFEC',
   '#AFFFD1',
@@ -45,7 +47,7 @@ export const laraGreen = [
   '#008035',
   '#004D1F',
   '#001C06',
-] as any;
+] as Tuple<string, 10>;
 export const laraOrange = [
   '#FFE9DF',
   '#FFC4AF',
@@ -57,7 +59,7 @@ export const laraOrange = [
   '#801E00',
   '#4E1000',
   '#200200',
-] as any;
+] as Tuple<string, 10>;
 export const laraRed = [
   '#FFE4E4',
   '#FEB7B8',
@@ -69,7 +71,7 @@ export const laraRed = [
   '#76070A',
   '#490204',
   '#1F0000',
-] as any;
+] as Tuple<string, 10>;
 export const laraPink = [
   '#FFE6F5',
   '#F5BEDA',
@@ -81,7 +83,7 @@ export const laraPink = [
   '#6B1441',
   '#420A28',
   '#1C010F',
-] as any;
+] as Tuple<string, 10>;
 export const laraYellow = [
   '#FFF6DA',
   '#FFE5AD',
@@ -93,7 +95,7 @@ export const laraYellow = [
   '#815400',
   '#4E3300',
   '#1E1000',
-] as any;
+] as Tuple<string, 10>;
 export const laraBlue = [
   '#E4EFFF',
   '#B9CFFA',
@@ -105,7 +107,7 @@ export const laraBlue = [
   '#0B2F71',
   '#031C47',
   '#00091D',
-] as any;
+] as Tuple<string, 10>;
 export const laraSuccess = [
   '#DDFFF2',
   '#B3FBDD',
@@ -117,4 +119,4 @@ export const laraSuccess = [
   '#037648',
   '#00482B',
   '#001A0C',
-] as any;
+] as Tuple<string, 10>;
