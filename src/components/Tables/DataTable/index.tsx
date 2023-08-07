@@ -1,8 +1,8 @@
 import {
-  Box, Loader, MantineProvider, Stack,
+  Box, Loader,
+  Stack,
 } from '@mantine/core';
 import React from 'react';
-import GlobalTheme from '../../../styles/theme';
 import NoResults from '../../Feedbacks/NoResults';
 import TablePagination from '../Pagination';
 import useStyles from './style';
@@ -32,46 +32,43 @@ export default function DataTable({
   const noResults = (!rows || !rows?.length) && !isLoading;
 
   return (
-    <MantineProvider theme={GlobalTheme} withGlobalStyles withNormalizeCSS>
-      {' '}
-      <Box className={classes.component}>
-        <Box className={classes.tableContainer}>
-          <table className={classes.table}>
-            <thead>
-              <tr>
-                {columns?.map((column, index) => (
-                  <th key={index}>{column}</th>
-                ))}
-              </tr>
-            </thead>
-            {!isLoading && rows?.length ? (
-              <tbody>
-                {rows?.map((item: any, index: number) => (
-                  <tr key={index}>
-                    {keys?.map((key) => (
-                      <td key={key}>{item[key]}</td>
-                    ))}
-                  </tr>
-                ))}
-              </tbody>
-            ) : null}
-          </table>
-          {noResults && (
+    <Box className={classes.component}>
+      <Box className={classes.tableContainer}>
+        <table className={classes.table}>
+          <thead>
+            <tr>
+              {columns?.map((column, index) => (
+                <th key={index}>{column}</th>
+              ))}
+            </tr>
+          </thead>
+          {!isLoading && rows?.length ? (
+            <tbody>
+              {rows?.map((item: any, index: number) => (
+                <tr key={index}>
+                  {keys?.map((key) => (
+                    <td key={key}>{item[key]}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          ) : null}
+        </table>
+        {noResults && (
           <Stack h="calc(100% - 3.75rem)" justify="center" align="center">
             <NoResults />
           </Stack>
-          )}
-          {isLoading && (
+        )}
+        {isLoading && (
           <Stack h="calc(100% - 3.75rem)" justify="center" align="center">
             <Loader color="violet.4" />
           </Stack>
-          )}
-        </Box>
-        <TablePagination
-          total={Number(paginationProps?.totalPages ?? 0)}
-          onChange={paginationProps?.onPageChange}
-        />
+        )}
       </Box>
-    </MantineProvider>
+      <TablePagination
+        total={Number(paginationProps?.totalPages ?? 0)}
+        onChange={paginationProps?.onPageChange}
+      />
+    </Box>
   );
 }
