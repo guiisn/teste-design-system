@@ -16,7 +16,7 @@ jobs:
           node-version: 18
           registry-url: https://npm.pkg.github.com/
           scope: '@guiisn'
-      - run: npm install
+      - run: npm install --loglevel=error
 
       # Configure git identity
       - name: Set git identity
