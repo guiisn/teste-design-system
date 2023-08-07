@@ -63,7 +63,7 @@ export default function DataTable({
           )}
           {isLoading && (
           <Stack h="calc(100% - 3.75rem)" justify="center" align="center">
-            <Loader />
+            <Loader color="laraPurple.4" />
           </Stack>
           )}
         </Box>
