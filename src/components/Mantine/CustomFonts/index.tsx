@@ -6,48 +6,59 @@ export default function CustomFonts(): JSX.Element {
     <Global
       styles={[
         {
-          '@import': 'url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap")',
+          '@font-face': {
+            fontFamily: 'Nunito',
+            fontStyle: 'normal',
+            fontWeight: 200,
+            src: 'url("https://fonts.gstatic.com/s/nunito/v16/XRXV3I6Li01BKofINeaB.woff2") format("woff2")',
+          },
         },
         {
           '@font-face': {
             fontFamily: 'Nunito',
+            fontStyle: 'normal',
+            fontWeight: 300,
+            src: 'url("https://fonts.gstatic.com/s/nunito/v16/XRXV3I6Li01BKofINeaB.woff2") format("woff2")',
+          },
+        },
+        {
+          '@font-face': {
+            fontFamily: 'Nunito',
+            fontStyle: 'normal',
             fontWeight: 400,
-            fontStyle: 'normal',
+            src: 'url("https://fonts.gstatic.com/s/nunito/v16/XRXV3I6Li01BKofINeaB.woff2") format("woff2")',
           },
         },
         {
           '@font-face': {
             fontFamily: 'Nunito',
+            fontStyle: 'normal',
             fontWeight: 500,
-            fontStyle: 'normal',
+            src: 'url("https://fonts.gstatic.com/s/nunito/v16/XRXV3I6Li01BKofINeaB.woff2") format("woff2")',
           },
         },
         {
           '@font-face': {
             fontFamily: 'Nunito',
+            fontStyle: 'normal',
             fontWeight: 600,
-            fontStyle: 'normal',
+            src: 'url("https://fonts.gstatic.com/s/nunito/v16/XRXV3I6Li01BKofINeaB.woff2") format("woff2")',
           },
         },
         {
           '@font-face': {
             fontFamily: 'Nunito',
+            fontStyle: 'normal',
             fontWeight: 700,
-            fontStyle: 'normal',
+            src: 'url("https://fonts.gstatic.com/s/nunito/v16/XRXV3I6Li01BKofINeaB.woff2") format("woff2")',
           },
         },
         {
           '@font-face': {
             fontFamily: 'Nunito',
+            fontStyle: 'normal',
             fontWeight: 800,
-            fontStyle: 'normal',
-          },
-        },
-        {
-          '@font-face': {
-            fontFamily: 'Nunito',
-            fontWeight: 900,
-            fontStyle: 'normal',
+            src: 'url("https://fonts.gstatic.com/s/nunito/v16/XRXV3I6Li01BKofINeaB.woff2") format("woff2")',
           },
         },
       ]}
