@@ -55,7 +55,7 @@ const useStyles = createStyles((theme) => ({
         },
 
         td: {
-          color: theme.colors.laraGrey[9],
+          color: theme.colors.gray[9],
           fontFamily: 'Nunito',
           fontWeight: 600,
           fontSize: '.875rem',

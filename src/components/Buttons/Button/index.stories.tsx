@@ -29,6 +29,7 @@ const defaultProps = {
   size: 'md',
   radius: 'md',
   disabled: false,
+  color: 'violet.4',
   display: 'block',
   w: '10rem',
   loading: false,
@@ -37,7 +38,6 @@ const defaultProps = {
 export const PrimaryButton: StoryObj<CustomButtonProps> = {
   args: {
     children: 'Button',
-    color: 'laraPurple.4',
     ...defaultProps,
   },
 };
@@ -45,7 +45,6 @@ export const PrimaryButton: StoryObj<CustomButtonProps> = {
 export const OutlineButton: StoryObj<CustomButtonProps> = {
   args: {
     children: 'Button',
-    color: 'laraPurple.4',
     variant: 'outline',
     ...defaultProps,
   },
@@ -54,7 +53,6 @@ export const OutlineButton: StoryObj<CustomButtonProps> = {
 export const LightButton: StoryObj<CustomButtonProps> = {
   args: {
     children: 'Button',
-    color: 'laraPurple.4',
     variant: 'light',
     ...defaultProps,
   },
@@ -63,7 +61,6 @@ export const LightButton: StoryObj<CustomButtonProps> = {
 export const SubtleButton: StoryObj<CustomButtonProps> = {
   args: {
     children: 'Button',
-    color: 'laraPurple.4',
     variant: 'subtle',
     ...defaultProps,
   },

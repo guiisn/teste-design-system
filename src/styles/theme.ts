@@ -22,7 +22,7 @@ const GlobalTheme: MantineThemeOverride = {
   components: {
     Button: {
       defaultProps: {
-        color: 'violet.4',
+        color: 'violet.0',
       },
       styles: {
         root: {
