@@ -12,9 +12,9 @@ const useStyles = createStyles((theme) => ({
     fontFamily: 'Nunito',
     fontSize: '1.15rem',
     fontWeight: 400,
-    color: theme.colors.laraGrey[4],
+    color: theme.colors.gray[4],
     '&[data-active]': {
-      backgroundColor: theme.colors.laraPurple[4],
+      backgroundColor: theme.colors.violet[4],
       fontWeight: 800,
     },
   },

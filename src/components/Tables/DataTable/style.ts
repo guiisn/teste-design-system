@@ -28,14 +28,14 @@ const useStyles = createStyles((theme) => ({
       position: 'sticky',
       top: 0,
       textTransform: 'uppercase',
-      backgroundColor: theme.colors.laraPurple[0],
+      backgroundColor: theme.colors.violet[0],
       height: '3.75rem',
       borderRadius: '.5rem .5rem 0 0',
       textAlign: 'center',
 
       tr: {
         th: {
-          color: theme.colors.laraPurple[4],
+          color: theme.colors.violet[4],
           fontFamily: 'Nunito',
           fontWeight: 800,
           fontSize: '.875rem',

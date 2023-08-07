@@ -10,7 +10,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   icon: {
-    color: theme.colors.laraPurple[4],
+    color: theme.colors.violet[4],
     height: '5rem',
     width: '5rem',
   },

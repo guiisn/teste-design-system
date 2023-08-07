@@ -15,7 +15,7 @@ export default function TablePagination(props: PaginationProps): JSX.Element {
           onChange={onChange}
           total={total}
           radius="xl"
-          color="laraPurple.4"
+          color="violet.4"
           classNames={{
             control: classes.control,
           }}
