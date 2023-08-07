@@ -9,6 +9,22 @@ export default function CustomFonts(): JSX.Element {
           '@font-face': {
             fontFamily: 'Nunito',
             fontStyle: 'normal',
+            fontWeight: 200,
+            src: 'url("https://fonts.gstatic.com/s/nunito/v16/XRXV3I6Li01BKofINeaB.woff2") format("woff2")',
+          },
+        },
+        {
+          '@font-face': {
+            fontFamily: 'Nunito',
+            fontStyle: 'normal',
+            fontWeight: 300,
+            src: 'url("https://fonts.gstatic.com/s/nunito/v16/XRXV3I6Li01BKofINeaB.woff2") format("woff2")',
+          },
+        },
+        {
+          '@font-face': {
+            fontFamily: 'Nunito',
+            fontStyle: 'normal',
             fontWeight: 400,
             src: 'url("https://fonts.gstatic.com/s/nunito/v16/XRXV3I6Li01BKofINeaB.woff2") format("woff2")',
           },
