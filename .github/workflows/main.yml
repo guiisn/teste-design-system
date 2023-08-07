@@ -18,6 +18,12 @@ jobs:
           scope: '@guiisn'
       - run: npm install
 
+      # Configure git identity
+      - name: Set git identity
+        run: |
+          git config user.email "glhrmsouzanunes@gmail.com"
+          git config user.name "guiisn"
+
       # Increment version using standard-version
       - name: Increment Version
         run: npm run release
