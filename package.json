@@ -22,7 +22,8 @@
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "release": "standard-version"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -74,6 +75,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "size-limit": "^8.2.6",
+    "standard-version": "^9.5.0",
     "storybook": "7.2.0",
     "storybook-dark-mode": "^3.0.1",
     "tsdx": "^0.13.3",

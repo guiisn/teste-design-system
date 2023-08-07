@@ -1,6 +1,6 @@
 import { BoxProps, MantineProvider } from '@mantine/core';
 import React from 'react';
-import GlobalTheme from '../../styles/theme';
+import GlobalTheme from '../../../styles/theme';
 import CustomFonts from '../CustomFonts';
 
 export default function LaraProvider(props: BoxProps): JSX.Element {
