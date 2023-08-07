@@ -1,6 +1,6 @@
-import { ButtonProps, Button as MantineButton } from '@mantine/core';
+import { ButtonProps, Button as MantineButton, MantineProvider } from '@mantine/core';
 import React from 'react';
-import ThemeWrapper from '../../..';
+import GlobalTheme from '../../../styles/theme';
 
 export interface CustomButtonProps extends ButtonProps {
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
@@ -8,8 +8,8 @@ export interface CustomButtonProps extends ButtonProps {
 
 export default function Button(props: CustomButtonProps): JSX.Element {
   return (
-    <ThemeWrapper>
+    <MantineProvider theme={GlobalTheme} withGlobalStyles withNormalizeCSS>
       <MantineButton {...props} />
-    </ThemeWrapper>
+    </MantineProvider>
   );
 }

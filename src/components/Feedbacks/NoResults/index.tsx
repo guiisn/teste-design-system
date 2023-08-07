@@ -1,14 +1,16 @@
-import { Box, Stack, Title } from '@mantine/core';
-import { MoodSad } from 'tabler-icons-react';
+import {
+  Box, MantineProvider, Stack, Title,
+} from '@mantine/core';
 import React from 'react';
+import { MoodSad } from 'tabler-icons-react';
+import GlobalTheme from '../../../styles/theme';
 import useStyles from './style';
-import ThemeWrapper from '../../..';
 
 export default function NoResults(): JSX.Element {
   const { classes } = useStyles();
 
   return (
-    <ThemeWrapper>
+    <MantineProvider theme={GlobalTheme} withGlobalStyles withNormalizeCSS>
       <Box className={classes.component} data-testid="noResultsContainer">
         <Stack align="center">
           <MoodSad className={classes.icon} />
@@ -18,6 +20,6 @@ export default function NoResults(): JSX.Element {
         </Stack>
       </Box>
 
-    </ThemeWrapper>
+    </MantineProvider>
   );
 }

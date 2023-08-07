@@ -1,9 +1,11 @@
-import { Box, Loader, Stack } from '@mantine/core';
+import {
+  Box, Loader, MantineProvider, Stack,
+} from '@mantine/core';
 import React from 'react';
+import GlobalTheme from '../../../styles/theme';
 import NoResults from '../../Feedbacks/NoResults';
-import useStyles from './style';
 import TablePagination from '../Pagination';
-import ThemeWrapper from '../../..';
+import useStyles from './style';
 
 export interface DataTableProps {
   columns: Array<string>;
@@ -30,7 +32,8 @@ export default function DataTable({
   const noResults = (!rows || !rows?.length) && !isLoading;
 
   return (
-    <ThemeWrapper>
+    <MantineProvider theme={GlobalTheme} withGlobalStyles withNormalizeCSS>
+      {' '}
       <Box className={classes.component}>
         <Box className={classes.tableContainer}>
           <table className={classes.table}>
@@ -69,6 +72,6 @@ export default function DataTable({
           onChange={paginationProps?.onPageChange}
         />
       </Box>
-    </ThemeWrapper>
+    </MantineProvider>
   );
 }
