@@ -12,7 +12,7 @@ export const laraPurple = [
   '#1f0050',
   '#0b0020',
 ] as Tuple<string, 10>;
-export const laraGrey = [
+export const laraGray = [
   '#E4E4E4',
   '#D9D9D9',
   '#BFBFBF',

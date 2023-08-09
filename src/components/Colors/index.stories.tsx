@@ -5,7 +5,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import { Copy } from 'tabler-icons-react';
 import {
-  laraAquamarine, laraBlue, laraGreen, laraGrey, laraOrange, laraPink, laraPurple, laraRed, laraSuccess, laraYellow,
+  laraAquamarine, laraBlue, laraGreen, laraGray, laraOrange, laraPink, laraPurple, laraRed, laraSuccess, laraYellow,
 } from '../../styles/colors';
 import Button from '../Buttons/Button';
 
@@ -23,8 +23,8 @@ function GetPalette(): JSX.Element {
   const palette = (title: string, colors: string[]): JSX.Element => (
     <Stack>
       <Group position="apart">
-        <Title order={4}>{title}</Title>
-        <Button variant="subtle" rightIcon={<Copy />} size="xs" onClick={() => copyToClipboard(colors?.toString())}>
+        <Title order={4} color={colors[4]}>{title}</Title>
+        <Button variant="subtle" color="violet.4" rightIcon={<Copy />} size="xs" onClick={() => copyToClipboard(colors?.toString())}>
           Copy
         </Button>
       </Group>
@@ -35,7 +35,7 @@ function GetPalette(): JSX.Element {
               height: '50px', width: '80px', backgroundColor: color, borderRadius: '2px 2px 0 0',
             }}
             />
-            <Title order={6}>{color}</Title>
+            <Title order={6} color="gray.9">{color}</Title>
           </Stack>
         ))}
       </Group>
@@ -44,16 +44,16 @@ function GetPalette(): JSX.Element {
 
   return (
     <Stack>
-      {palette('Lara Purple', laraPurple)}
-      {palette('Lara Aquamarine', laraAquamarine)}
-      {palette('Lara Blue', laraBlue)}
-      {palette('Lara Green', laraGreen)}
-      {palette('Lara Grey', laraGrey)}
-      {palette('Lara Orange', laraOrange)}
-      {palette('Lara Pink', laraPink)}
-      {palette('Lara Red', laraRed)}
-      {palette('Lara Success', laraSuccess)}
-      {palette('Lara Yellow', laraYellow)}
+      {palette('Violet', laraPurple)}
+      {palette('Indigo', laraAquamarine)}
+      {palette('Blue', laraBlue)}
+      {palette('Green', laraGreen)}
+      {palette('Gray', laraGray)}
+      {palette('Orange', laraOrange)}
+      {palette('Pink', laraPink)}
+      {palette('Red', laraRed)}
+      {palette('Teal', laraSuccess)}
+      {palette('Yellow', laraYellow)}
     </Stack>
   );
 }

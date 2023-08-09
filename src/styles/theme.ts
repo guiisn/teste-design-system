@@ -1,13 +1,13 @@
 import { MantineThemeOverride } from '@mantine/core';
 import {
-  laraAquamarine, laraBlue, laraGreen, laraGrey, laraOrange, laraPink,
+  laraAquamarine, laraBlue, laraGreen, laraGray, laraOrange, laraPink,
   laraRed, laraSuccess, laraYellow, laraPurple,
 } from './colors';
 
 const GlobalTheme: MantineThemeOverride = {
   colors: {
     violet: laraPurple,
-    gray: laraGrey,
+    gray: laraGray,
     indigo: laraAquamarine,
     blue: laraBlue,
     green: laraGreen,
