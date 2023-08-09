@@ -55,12 +55,12 @@ export default function DataTable({
           ) : null}
         </table>
         {noResults && (
-          <Stack h="calc(100% - 3.75rem)" justify="center" align="center">
+          <Stack h="calc(100% - 3.75rem)" justify="center" align="center" data-testid="noResultsContainer">
             <NoResults />
           </Stack>
         )}
         {isLoading && (
-          <Stack h="calc(100% - 3.75rem)" justify="center" align="center">
+          <Stack h="calc(100% - 3.75rem)" justify="center" align="center" data-testid="loader-container">
             <Loader color="violet.4" />
           </Stack>
         )}

@@ -1,10 +1,11 @@
-import { Tabs as MantineTabs, TabsProps } from '@mantine/core';
+import { Tabs as MantineTabs } from '@mantine/core';
 import React from 'react';
 import StyledTabs from './StylesTabs';
 
-export interface CustomTabsProps extends TabsProps {
+export interface CustomTabsProps {
     tabs: Array<{ value: string, text: string }>
     panels?: Array<{component: JSX.Element, value: string}>
+    defaultValue: string
 }
 
 export default function Tabs(props: CustomTabsProps): JSX.Element {

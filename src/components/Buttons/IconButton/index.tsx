@@ -3,11 +3,12 @@ import React from 'react';
 
 export interface IconButtonProps extends ActionIconProps {
     tooltipTitle: string
+    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 export default function IconButton(props: IconButtonProps): JSX.Element {
   const {
-    tooltipTitle, children, color, variant,
+    tooltipTitle, children, color, variant, onClick, ...rest
   } = props;
 
   return (
@@ -18,6 +19,8 @@ export default function IconButton(props: IconButtonProps): JSX.Element {
         sx={{ borderRadius: '10px' }}
         color={color}
         variant={variant}
+        onClick={onClick}
+        {...rest}
       >
         {children}
       </ActionIcon>

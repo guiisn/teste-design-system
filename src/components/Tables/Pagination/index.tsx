@@ -11,6 +11,7 @@ export default function TablePagination(props: PaginationProps): JSX.Element {
   return (
     <Box className={classes.component} data-testid="paginationContainer">
       <Pagination
+        data-testid="pagination-element"
         onChange={onChange}
         total={total}
         radius="xl"
