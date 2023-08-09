@@ -17,7 +17,9 @@ export default {
   },
 } as Meta<DataTableProps>;
 
-const rows = [
+export const tableColumns = ['Element position', 'Element name', 'Symbol', 'Atomic mass'];
+
+export const tableRows = [
   {
     position: 6, mass: 12.011, symbol: 'C', name: 'Carbon',
   },
@@ -37,21 +39,21 @@ const rows = [
 
 export const Table: StoryObj<DataTableProps> = {
   args: {
-    columns: ['Element position', 'Element name', 'Symbol', 'Atomic mass'],
-    rows,
+    columns: tableColumns,
+    rows: tableRows,
   },
 };
 
 export const TableWithoutData: StoryObj<DataTableProps> = {
   args: {
-    columns: ['Element position', 'Element name', 'Symbol', 'Atomic mass'],
+    columns: tableColumns,
     rows: [],
   },
 };
 
 export const TableLoading: StoryObj<DataTableProps> = {
   args: {
-    columns: ['Element position', 'Element name', 'Symbol', 'Atomic mass'],
+    columns: tableColumns,
     rows: [],
     isLoading: true,
   },
@@ -59,8 +61,8 @@ export const TableLoading: StoryObj<DataTableProps> = {
 
 export const TableWithPagination: StoryObj<DataTableProps> = {
   args: {
-    columns: ['Element position', 'Element name', 'Symbol', 'Atomic mass'],
-    rows,
+    columns: tableColumns,
+    rows: tableRows,
     paginationProps: {
       totalPages: 2,
       onPageChange: () => console.log('page changed'),

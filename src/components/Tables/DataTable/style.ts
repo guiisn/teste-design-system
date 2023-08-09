@@ -7,6 +7,7 @@ const useStyles = createStyles((theme) => ({
     justifyContent: 'space-between',
     gap: '.5rem',
     height: '100%',
+    width: '100%',
   },
 
   tableContainer: {
