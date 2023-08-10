@@ -1,6 +1,6 @@
 import { Group, Navbar, Stack } from '@mantine/core';
 import React from 'react';
-import LogoLara from '../../DataDisplay/LogoLara';
+import logoBlack from '../../../assets/logo.svg';
 
 export interface AppShellNavbarProps {
     navbarWidths: {
@@ -39,7 +39,7 @@ export default function AppShellNavbar({ navbarWidths, options, footer }: AppShe
           align="center"
           sx={{ height: '7.5rem' }}
         >
-          <LogoLara variant="black" w="9rem" />
+          <img src={logoBlack} alt="LARA" style={{ width: '9rem' }} />
         </Group>
       </Navbar.Section>
       <Navbar.Section>
