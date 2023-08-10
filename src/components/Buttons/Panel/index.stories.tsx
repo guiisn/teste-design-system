@@ -2,10 +2,10 @@ import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import { ReportMoney } from 'tabler-icons-react';
 import logo from '../../../assets/logo.svg';
-import ProposalButton, { ProposalButtonProps } from '.';
+import ProposalButton, { PanelButtonProps } from '.';
 
 export default {
-  title: 'Buttons/ProposalButton',
+  title: 'Buttons/PanelButton',
   component: ProposalButton,
   tags: ['autodocs'],
   decorators: [
@@ -15,9 +15,9 @@ export default {
       </div>
     ),
   ],
-} as Meta<ProposalButtonProps>;
+} as Meta<PanelButtonProps>;
 
-export const Component: StoryObj<ProposalButtonProps> = {
+export const Component: StoryObj<PanelButtonProps> = {
   args: {
     selected: false,
     icon: <ReportMoney />,
@@ -26,14 +26,14 @@ export const Component: StoryObj<ProposalButtonProps> = {
   },
 };
 
-export const Selected: StoryObj<ProposalButtonProps> = {
+export const Selected: StoryObj<PanelButtonProps> = {
   args: {
     selected: true,
     icon: <ReportMoney />,
     text: 'Parcelado sem juros',
   },
 };
-export const WithImage: StoryObj<ProposalButtonProps> = {
+export const WithImage: StoryObj<PanelButtonProps> = {
   args: {
     selected: false,
     icon: <img src={logo} alt="Lara" />,

@@ -20,6 +20,11 @@ const GlobalTheme: MantineThemeOverride = {
   primaryColor: 'violet',
   colorScheme: 'light',
   components: {
+    ActionIcon: {
+      defaultProps: {
+        radius: '10px',
+      },
+    },
     Button: {
       defaultProps: {
         color: 'violet.0',

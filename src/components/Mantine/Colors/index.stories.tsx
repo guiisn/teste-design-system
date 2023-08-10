@@ -6,8 +6,8 @@ import React from 'react';
 import { Copy } from 'tabler-icons-react';
 import {
   laraAquamarine, laraBlue, laraGreen, laraGray, laraOrange, laraPink, laraPurple, laraRed, laraSuccess, laraYellow,
-} from '../../styles/colors';
-import Button from '../Buttons/Button';
+} from '../../../styles/colors';
+import Button from '../../Buttons/Button';
 
 async function copyToClipboard(text: string): Promise<boolean> {
   try {
@@ -59,7 +59,7 @@ function GetPalette(): JSX.Element {
 }
 
 export default {
-  title: 'Colors/Palette',
+  title: 'Theming/Palette',
   tags: ['autodocs'],
   decorators: [
     () => (

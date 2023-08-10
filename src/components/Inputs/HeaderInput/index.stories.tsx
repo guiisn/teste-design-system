@@ -1,10 +1,10 @@
 import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import Switch from '.';
+import SearchContract, { HeaderInputProps } from '.';
 
 export default {
-  title: 'Buttons/Switch',
-  component: Switch,
+  title: 'Inputs/HeaderInput',
+  component: SearchContract,
   tags: ['autodocs'],
   decorators: [
     (Story) => (
@@ -13,11 +13,10 @@ export default {
       </div>
     ),
   ],
-} as Meta<typeof Switch>;
+} as Meta<HeaderInputProps>;
 
-export const Component: StoryObj<typeof Switch> = {
+export const Component: StoryObj<HeaderInputProps> = {
   args: {
-    label: 'I agree to sell my privacy',
-    labelPosition: 'left',
+    placeholder: 'Busque o contrato',
   },
 };

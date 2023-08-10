@@ -1,16 +1,16 @@
 import { Stack, UnstyledButton, useMantineTheme } from '@mantine/core';
 import React from 'react';
 
-export interface ProposalButtonProps {
+export interface PanelButtonProps {
     selected?: boolean
     icon?: JSX.Element
     text?: string
     onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-export default function ProposalButton({
+export default function PanelButton({
   selected, icon, text, onClick,
-}: ProposalButtonProps): JSX.Element {
+}: PanelButtonProps): JSX.Element {
   const theme = useMantineTheme();
 
   return (

@@ -7,7 +7,7 @@ import DataTable from '../../Tables/DataTable';
 import { tableColumns, tableRows } from '../../Tables/DataTable/index.stories';
 
 export default {
-  title: 'Buttons/Tabs',
+  title: 'Navigation/Tabs',
   component: Tabs,
   tags: ['autodocs'],
   decorators: [

@@ -4,7 +4,7 @@ import {
 } from '@mantine/core';
 import React from 'react';
 import NoResults from '../../Feedbacks/NoResults';
-import TablePagination from '../Pagination';
+import TablePagination from '../../Navigation/Pagination';
 import useStyles from './style';
 
 export interface DataTableProps {
