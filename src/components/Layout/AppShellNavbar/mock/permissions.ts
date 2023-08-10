@@ -1,27 +1,22 @@
+/* eslint-disable import/prefer-default-export */
 import { BuildingStore } from 'tabler-icons-react';
+import { NavLinkOptionsProps } from '../types';
 
-export interface Permissions {
-    icon: any
-    label: string
-    link: string
-    links?: Permissions[]
-  }
-
-export const mockOptions = (): Permissions[] => {
+export const mockOptions = (): NavLinkOptionsProps[] => {
   const franchisors = {
     label: 'Franchisors',
     link: '/company/franchisors',
-  } as Permissions;
+  } as NavLinkOptionsProps;
   const franchisees = {
     label: 'Franchisees',
     link: '/company/franchisees',
-  } as Permissions;
+  } as NavLinkOptionsProps;
   const units = {
     label: 'Units',
     link: '/company/units',
-  } as Permissions;
+  } as NavLinkOptionsProps;
 
-  const links = [franchisors, franchisees, units] as Permissions[];
+  const links = [franchisors, franchisees, units] as NavLinkOptionsProps[];
 
   return [
     {
@@ -30,5 +25,5 @@ export const mockOptions = (): Permissions[] => {
       link: '/company/units',
       links,
     },
-  ] as Permissions[];
+  ] as NavLinkOptionsProps[];
 };

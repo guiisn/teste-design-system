@@ -40,6 +40,25 @@ const useStyles = createStyles((theme) => ({
   navlinkSonLabel: {
     fontFamily: 'Nunito',
   },
+  navlinkFooterLabel: {
+    fontFamily: 'Nunito',
+    fontSize: '1rem',
+    fontWeight: 700,
+  },
+  navlinkFooterRoot: {
+    color: theme.colors.gray[4],
+    borderRadius: '8px',
+    '&[data-active]': {
+      color: theme.colors.gray[4],
+      backgroundColor: 'transparent',
+      ':hover': {
+        backgroundColor: theme.colors.gray[0],
+      },
+    },
+    ':hover': {
+      backgroundColor: theme.colors.gray[0],
+    },
+  },
 }));
 
 export default useStyles;

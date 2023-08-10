@@ -1,11 +1,6 @@
+/* eslint-disable import/prefer-default-export */
 import { Logout, Settings } from 'tabler-icons-react';
-
-export interface AppShellFooter {
-    icon: any
-    label: string
-    link: string | number
-    onClick?: () => void
-  }
+import { NavLinkOptionsProps } from '../types';
 
 export const appShellFooter = [
   {
@@ -20,4 +15,4 @@ export const appShellFooter = [
     onClick: () => console.log('logout')
     ,
   },
-] as AppShellFooter[];
+] as NavLinkOptionsProps[];

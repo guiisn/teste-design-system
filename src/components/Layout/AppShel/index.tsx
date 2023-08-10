@@ -25,11 +25,11 @@ export default function AppShell({ navbarProps, headerProps, children }: AppShel
           {...headerProps}
         />
         )}
-      styles={(theme) => ({
+      styles={{
         main: {
           maxHeight: '100%',
         },
-      })}
+      }}
     >
       {children}
     </MantineAppShell>

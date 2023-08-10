@@ -5,7 +5,7 @@ import logo from '../../../assets/logo.svg';
 import ProposalButton, { PanelButtonProps } from '.';
 
 export default {
-  title: 'Buttons/PanelButton',
+  title: 'Components/Buttons/PanelButton',
   component: ProposalButton,
   tags: ['autodocs'],
   decorators: [

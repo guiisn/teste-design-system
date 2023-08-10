@@ -7,7 +7,7 @@ import { Bell, ChevronLeft } from 'tabler-icons-react';
 import AppShellHeader, { AppShellHeaderProps } from '.';
 
 export default {
-  title: 'Layout/AppShellHeader',
+  title: 'Components/Layout/AppShellHeader',
   component: AppShellHeader,
   tags: ['autodocs'],
   decorators: [

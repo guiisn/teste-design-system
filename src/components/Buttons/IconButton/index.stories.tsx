@@ -4,7 +4,7 @@ import { PigMoney } from 'tabler-icons-react';
 import IconButton from '.';
 
 export default {
-  title: 'Buttons/IconButton',
+  title: 'Components/Buttons/IconButton',
   component: IconButton,
   tags: ['autodocs'],
   argTypes: {

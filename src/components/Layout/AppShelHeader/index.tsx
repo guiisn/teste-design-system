@@ -20,6 +20,7 @@ export default function AppShellHeader(props: AppShellHeaderProps): JSX.Element 
 
   return (
     <Header
+      data-testid="app-shell-header"
       ml={headerMarginLeft}
       height="7.5rem"
       sx={(theme) => ({

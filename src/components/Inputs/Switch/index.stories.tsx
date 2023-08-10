@@ -3,7 +3,7 @@ import React from 'react';
 import Switch from '.';
 
 export default {
-  title: 'Inputs/Switch',
+  title: 'Components/Inputs/Switch',
   component: Switch,
   tags: ['autodocs'],
   decorators: [

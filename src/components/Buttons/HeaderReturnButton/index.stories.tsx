@@ -4,7 +4,7 @@ import { ChevronLeft } from 'tabler-icons-react';
 import HeaderReturnButton, { HeaderReturnButtonProps } from '.';
 
 export default {
-  title: 'Buttons/HeaderReturnButton',
+  title: 'Components/Buttons/HeaderReturnButton',
   component: HeaderReturnButton,
   tags: ['autodocs'],
   decorators: [

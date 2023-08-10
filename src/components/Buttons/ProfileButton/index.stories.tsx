@@ -6,7 +6,7 @@ import React from 'react';
 import ProfileButton from '.';
 
 export default {
-  title: 'Buttons/ProfileButton',
+  title: 'Components/Buttons/ProfileButton',
   component: ProfileButton,
   tags: ['autodocs'],
   decorators: [

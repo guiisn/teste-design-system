@@ -3,7 +3,7 @@ import React from 'react';
 import NoResults from '.';
 
 export default {
-  title: 'Feedbacks/NoResults',
+  title: 'Components/Feedbacks/NoResults',
   component: NoResults,
   tags: ['autodocs'],
   decorators: [

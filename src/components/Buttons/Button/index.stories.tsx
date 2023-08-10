@@ -3,7 +3,7 @@ import React from 'react';
 import Button, { CustomButtonProps } from '.';
 
 export default {
-  title: 'Buttons/Button',
+  title: 'Components/Buttons/Button',
   component: Button,
   tags: ['autodocs'],
   argTypes: {

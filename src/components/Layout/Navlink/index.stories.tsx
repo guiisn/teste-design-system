@@ -7,7 +7,7 @@ import { ReportMoney } from 'tabler-icons-react';
 import NavLink from '.';
 
 export default {
-  title: 'Layout/NavLink',
+  title: 'Components/Layout/NavLink',
   component: NavLink,
   tags: ['autodocs'],
   decorators: [

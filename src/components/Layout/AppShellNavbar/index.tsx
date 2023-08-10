@@ -10,13 +10,14 @@ export interface AppShellNavbarProps {
         sm: number;
         xs: number;
     }
-    options?: React.JSX.Element[]
-    footer?: JSX.Element[]
+    options?: JSX.Element
+    footer?: JSX.Element
 }
 
 export default function AppShellNavbar({ navbarWidths, options, footer }: AppShellNavbarProps): JSX.Element {
   return (
     <Navbar
+      data-testid="app-shell-navbar"
       width={navbarWidths}
       height="100%"
       sx={{

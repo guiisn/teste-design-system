@@ -4,7 +4,7 @@ import { PaginationProps } from '@mantine/core';
 import TablePagination from '.';
 
 export default {
-  title: 'Navigation/Pagination',
+  title: 'Components/Navigation/Pagination',
   component: TablePagination,
   tags: ['autodocs'],
   decorators: [

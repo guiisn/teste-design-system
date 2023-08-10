@@ -6,7 +6,7 @@ import React from 'react';
 import LogoLara, { LogoLaraProps } from '.';
 
 export default {
-  title: 'DataDisplay/LogoLara',
+  title: 'Components/DataDisplay/LogoLara',
   component: LogoLara,
   tags: ['autodocs'],
   decorators: [

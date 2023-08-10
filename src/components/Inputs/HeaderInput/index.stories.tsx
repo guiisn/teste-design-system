@@ -3,7 +3,7 @@ import React from 'react';
 import SearchContract, { HeaderInputProps } from '.';
 
 export default {
-  title: 'Inputs/HeaderInput',
+  title: 'Components/Inputs/HeaderInput',
   component: SearchContract,
   tags: ['autodocs'],
   decorators: [

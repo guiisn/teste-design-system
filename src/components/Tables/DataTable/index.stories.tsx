@@ -3,7 +3,7 @@ import React from 'react';
 import DataTable, { DataTableProps } from '.';
 
 export default {
-  title: 'Typography/DataTable',
+  title: 'Components/Typography/DataTable',
   component: DataTable,
   tags: ['autodocs'],
   decorators: [

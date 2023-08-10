@@ -3,8 +3,9 @@ import React from 'react';
 
 export default function ProfileButton(): JSX.Element {
   return (
-    <UnstyledButton>
+    <UnstyledButton data-testid="profile-button">
       <Avatar
+        data-testid="avatar"
         src="https://lh3.googleusercontent.com/pw/AIL4fc9W2OxxoJgGEIBil7KiX2nWcbGefVOz1htr1K59jdC7Bh5EDWZnPkpuuYNte4RO_A04HtCXImPK87JydQYhggZVgiOafTSxci6wsC1jS0d3wXGRPQBtdtDyigyY8ZnCfLBPdobqfeTgZhBQ2OC_TyE=w45-h54-s-no?authuser=0"
         alt="it's me"
         radius="50%"

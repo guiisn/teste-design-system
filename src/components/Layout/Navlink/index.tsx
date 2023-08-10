@@ -3,7 +3,7 @@ import React from 'react';
 import useStyles from './style';
 
 export interface NavLinkProps extends MantineNavLinkProps {
-    variant?: 'dead' | 'son'
+    variant?: 'dead' | 'son' | 'footer'
     onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
@@ -16,10 +16,12 @@ export default function NavLink({
     label: {
       dead: classes.navlinkDeadLabel,
       son: classes.navlinkSonLabel,
+      footer: classes.navlinkFooterLabel,
     },
     root: {
       dead: classes.navlinkDeadRoot,
       son: classes.navlinkSonRoot,
+      footer: classes.navlinkFooterRoot,
     },
   };
 
