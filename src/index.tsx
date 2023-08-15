@@ -1,3 +1,7 @@
+import {
+  Paper, Box, Group, Stack, Grid, SimpleGrid,
+} from '@mantine/core';
+
 import Button from './components/Buttons/Button';
 import IconButton from './components/Buttons/IconButton';
 import PanelButton from './components/Buttons/Panel';
@@ -25,10 +29,17 @@ import Select from './components/Inputs/Select';
 import Breadcrumbs from './components/Navigation/Breadcrumbs';
 import ProfileMenu from './components/Overlays/ProfileMenu';
 import InfoBox from './components/DataDisplay/Cards/InfoBox';
+import DetailingCard from './components/DataDisplay/Cards/DetailingCard';
 
 import './styles/global.css';
 
 export {
+  Paper, // mantine
+  Box, // mantine
+  Group, // mantine
+  Stack, // mantine
+  Grid, // mantine
+  SimpleGrid,
   Button,
   IconButton,
   PanelButton,
@@ -56,4 +67,5 @@ export {
   Breadcrumbs,
   ProfileMenu,
   InfoBox,
+  DetailingCard,
 };
