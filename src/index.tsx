@@ -24,6 +24,7 @@ import PasswordInput from './components/Inputs/PasswordInput';
 import Select from './components/Inputs/Select';
 import Breadcrumbs from './components/Navigation/Breadcrumbs';
 import ProfileMenu from './components/Overlays/ProfileMenu';
+import InfoBox from './components/DataDisplay/Cards/InfoBox';
 
 import './styles/global.css';
 
@@ -54,4 +55,5 @@ export {
   Select,
   Breadcrumbs,
   ProfileMenu,
+  InfoBox,
 };
