@@ -2,8 +2,8 @@ import { Group, Header, Title } from '@mantine/core';
 import React from 'react';
 import HeaderReturnButton, { HeaderReturnButtonProps } from '../../Buttons/HeaderReturnButton';
 import IconButton, { IconButtonProps } from '../../Buttons/IconButton';
-import ProfileButton from '../../Buttons/ProfileButton';
 import HeaderInput, { HeaderInputProps } from '../../Inputs/HeaderInput';
+import ProfileMenu from '../../Overlays/ProfileMenu';
 
 export interface AppShellHeaderProps {
     headerMarginLeft: {md: number;lg: number;xl: number;sm: number;xs: number;}
@@ -39,7 +39,7 @@ export default function AppShellHeader(props: AppShellHeaderProps): JSX.Element 
         </Group>
         <Group>
           <HeaderInput {...searchInputProps} />
-          <ProfileButton />
+          <ProfileMenu />
           <IconButton {...notificationButtonProps} />
         </Group>
       </Group>

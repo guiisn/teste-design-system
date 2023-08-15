@@ -62,12 +62,10 @@ describe('AppShellHeader', () => {
     const returnButtonElement = screen.getByText('Back');
     const titleElement = screen.getByText('My Page');
     const searchInputElement = screen.getByPlaceholderText('Search');
-    const profileButtonElement = screen.getByAltText("it's me");
 
     expect(returnButtonElement).toBeInTheDocument();
     expect(titleElement).toBeInTheDocument();
     expect(searchInputElement).toBeInTheDocument();
-    expect(profileButtonElement).toBeInTheDocument();
   });
 
   it('calls onClick when the ReturnButton is clicked', () => {

@@ -3,5 +3,5 @@ import storybookTheme from './storybookTheme';
 
 
 addons.setConfig({
-    theme: storybookTheme
+    theme: storybookTheme,
 })

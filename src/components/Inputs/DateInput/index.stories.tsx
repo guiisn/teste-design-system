@@ -3,19 +3,23 @@ import {
 } from '@mantine/core';
 import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import ProfileButton from '.';
+import DateInput from '.';
 
 export default {
-  title: 'Components/Buttons/ProfileButton',
-  component: ProfileButton,
+  title: 'Components/Inputs/DateInput',
+  component: DateInput,
   tags: ['autodocs'],
   decorators: [
     (Story) => (
-      <Box>
+      <Box h="50rem">
         {Story()}
       </Box>
     ),
   ],
-} as Meta<typeof ProfileButton>;
+} as Meta<typeof DateInput>;
 
-export const Component: StoryObj<typeof ProfileButton> = {};
+export const Component: StoryObj<typeof DateInput> = {
+  args: {
+    label: 'Date',
+  },
+};
